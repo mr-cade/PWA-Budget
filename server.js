@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
+mongoose.connect("mongodb+srv://mr-cade:20164Runner@cluster0.qf7cp.mongodb.net/budget?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
